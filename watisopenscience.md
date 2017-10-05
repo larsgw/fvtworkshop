@@ -2,7 +2,7 @@ Wat is Open Science?
 ====================
 
 Open Science is wetenschap uit elke discipline (niet alleen natuurwetenschappen) met een
-nadruk om efficiente disseminatie en hergebruik van opgedane kennis. Om dit mogelijk te maken
+nadruk op efficiënte disseminatie en hergebruik van opgedane kennis. Om dit mogelijk te maken
 heeft Open Science drie centrale uitgangspunten:
 
 1. je mag de kennis gebruiken
