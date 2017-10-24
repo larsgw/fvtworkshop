@@ -7,9 +7,9 @@ Een internationaal consortium heeft FAIR [in 2016 voorgesteld](https://www.natur
 dit is door veel organisaties opgepikt, zoals de G20.
 
 * [Wat is vindbaar?](findable.md)
-* [Wat is toegankelijk?]
-* [Wat is interoperabel?]
-* [Wat is herbruikbaar?]
+* [Wat is toegankelijk?](access.md)
+* [Wat is interoperabel?](interop.md)
+* [Wat is herbruikbaar?](reusable.md)
 
 FAIR meten
 ----------
