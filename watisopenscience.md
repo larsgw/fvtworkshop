@@ -53,8 +53,8 @@ Open Data is data waarbij iedereen de drie grondrechten heeft. Het is daarmee ee
 verder onderzoek.
 
 Waar kan Open Source gevonden worden (de F in FAIR):
-* [FigShare[(http://figshare.org)
-* [Zenodo[(http://zenodo.org)
+* [FigShare](http://figshare.org)
+* [Zenodo](http://zenodo.org)
 * [DataHub](http://datahub.io/)
 
 Open Specificaties
