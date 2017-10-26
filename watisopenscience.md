@@ -44,7 +44,7 @@ beschikbaar zijn.
 
 Waar kan Open Source gevonden worden (de F in FAIR):
 * [SourceForge](http://sf.net/)
-* [GitHub](http://github.com/) (veel Nederlandse univeristaire en hogeschool groepen hebben eigen servers)
+* [GitHub](http://github.com/) (veel Nederlandse univeristaire en hogeschool groepen hebben [eigen repositories en servers](https://docs.google.com/spreadsheets/d/1yXNQg4S7GVRbaB__zCoBr67y_uwx7Eq-C4JGowJMAt0/edit#gid=0))
 
 Open Data
 ---------
