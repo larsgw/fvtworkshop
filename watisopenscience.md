@@ -42,12 +42,28 @@ we de open licenties: GPL, MIT, BSD, Apache License, etc.
 Echter, er is in de wetenschap ook heel veel software waarbij zulke licenties niet
 beschikbaar zijn.
 
+Waar kan Open Source gevonden worden (de F in FAIR):
+* [SourceForge[(http://sf.net/)
+* [GitHub](http://github.com/) (veel Nederlandse univeristaire en hogeschool groepen hebben eigen servers)
+
 Open Data
 ---------
 
-....
+Open Data is data waarbij iedereen de drie grondrechten heeft. Het is daarmee een stevige basis voor
+verder onderzoek.
+
+Waar kan Open Source gevonden worden (de F in FAIR):
+* [FigShare[(http://figshare.org)
+* [Zenodo[(http://zenodo.org)
+* [DataHub](http://datahub.io/)
 
 Open Specificaties
 ------------------
 
-...
+Bij Open Specificaties van je denken aan bestandsformaten (bv. CSV voor tabellen) maar ook aan
+gemeenschappelijke talen (bv ontologieen).
+
+Waar kan Open Specifications gevonden worden (de F in FAIR):
+* [FairSharing](http://fairsharing.org) (e.g. voor specificaties)
+* [BioPortal](http://bioportal.org) (bv voor ontologieen)
+* [Ontology Lookup Server](https://www.ebi.ac.uk/ols/) (bv voor ontologieen)
