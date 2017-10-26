@@ -12,7 +12,7 @@ Open Science is geven en namen. Daarom beginnen we met nemen: [Scholia](https://
 
 Opdracht: Zoek literature in Scholia over het Zika virus.
 
-[IMAGE]
+![Searching Zika virus in Scholia](https://github.com/egonw/fopworkshop/raw/master/scholia_zika.png)
 
 Bronvermeldingen
 ----------------
