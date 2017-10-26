@@ -43,7 +43,7 @@ Echter, er is in de wetenschap ook heel veel software waarbij zulke licenties ni
 beschikbaar zijn.
 
 Waar kan Open Source gevonden worden (de F in FAIR):
-* [SourceForge[(http://sf.net/)
+* [SourceForge](http://sf.net/)
 * [GitHub](http://github.com/) (veel Nederlandse univeristaire en hogeschool groepen hebben eigen servers)
 
 Open Data
