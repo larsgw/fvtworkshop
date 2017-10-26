@@ -1,3 +1,5 @@
+De slides van Egon Willighagen zijn [hier](https://speakerdeck.com/egonw/verder-bouwen-aan-open-science) beschikbaar.
+
 Wat is Open Science?
 ====================
 
