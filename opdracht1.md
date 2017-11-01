@@ -5,8 +5,8 @@ In deze opdracht gaan we aan de slag met Open Data. Meer specifiek, we gaan aan 
 met de annotatie van Open Data met literatuur die het experiment of studie beschrijft die
 een feit ondersteund.
 
-1. Scholia
-----------
+1 Scholia
+---------
 
 Open Science is geven en namen. Daarom beginnen we met nemen: [Scholia](https://tools.wmflabs.org/scholia/).
 
@@ -18,8 +18,8 @@ Open Science is geven en namen. Daarom beginnen we met nemen: [Scholia](https://
 
 IMAGE_TBD
 
-2. Literatuur toevoegen aan Wikidata
-------------------------------------
+2 Literatuur toevoegen aan Wikidata
+-----------------------------------
 
 Als je nou literatuur aan Wikidata wil toevoegen, omdat die een auteur heeft van jouw instituut (vorige
 opdracht), of omdat je die als bronvermelding wil gebruiken voor een feit in Wikidata, dan kan je die
@@ -46,8 +46,8 @@ IMAGE_TBD
 
 TBD
 
-3. Bronvermeldingen
--------------------
+3 Bronvermeldingen
+------------------
 
 Het tweede stuk is het delen van kennis. 
 
