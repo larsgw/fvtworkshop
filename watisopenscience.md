@@ -26,7 +26,7 @@ is. Wat termen:
 - Platinum Open Access: Is Gold Open Access zonder dat er kosten voor de auteur voor het
   publiceren bij betrokken is.
 
-Maar vooral green Open Access heeft vaak open licentie. Je mag dat document dan niet
+Maar vooral green Open Access heeft vaak geen open licentie. Je mag dat document dan niet
 delen met, bijvoorbeeld, studenten in je klas.
 
 Meer informatie:
