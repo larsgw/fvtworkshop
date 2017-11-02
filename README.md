@@ -1,6 +1,6 @@
 # FAIR Data: voor beginners en gevorderden!
 
-De [FAIR Data: voor beginners en gevorderden!](index.md) workshop is onderdeel van een [aankomend SURF evenement](https://www.surf.nl/agenda/2017/10/seminar-verder-bouwen-aan-open-access/index.html).
+De [FAIR Data: voor beginners en gevorderden!](index.md) workshop was onderdeel van een [SURF evenement](https://www.surf.nl/agenda/2017/10/seminar-verder-bouwen-aan-open-access/index.html).
 
 Of lees dit materiaal online op https://egonw.github.io/fopworkshop/
 
