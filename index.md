@@ -16,7 +16,7 @@ Wat je kan doen na deze workshop:
 Deel I: De theorie
 ------------------
 
-De "FAIR Data: voor beginners en gevorderden!" workshop is onderdeel van aan aankomend SURF evenement.
+De "FAIR Data: voor beginners en gevorderden!" workshop was onderdeel van een SURF evenement.
 
 * [Wat is Open Science?](watisopenscience.md)
 * [Wat is FAIR?](watisfair.md)
