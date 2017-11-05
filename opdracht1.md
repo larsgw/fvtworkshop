@@ -49,6 +49,11 @@ TBD
 3 Bronvermeldingen
 ------------------
 
-Het tweede stuk is het delen van kennis. 
+Het tweede stuk is het delen van kennis. In tijden dat feiten belangrijker zijn dan ooit, is het zaak te weten
+waar die feit vandaan komt: bronvermeldingen. Wikidata heeft hier een rijk mechanisme voor, en elke
+"statement" kan onderbouwd worden met een of meer bronvermeldingen. En voor, bijvoorbeeld, fysisch-chemische
+eigenschappen kunnen er ook gewoon meerdere metingen weergegeven worden:
+
+
 
 ....
