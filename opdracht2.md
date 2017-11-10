@@ -16,10 +16,10 @@ Het eerste voorbeeld is zoeken op alle dingen die een kat zijn. Die SPARQL zoeko
 hoeven we niet zelf te verzinnen, maar is een voorbeeld uit meer dan 300 voorbeelden die de WQS
 standaard aanbiedt onder de "Example" knop:
 
-[IMAGE]
+![Wikidata heeft veel voorbeeld SPARQL zoekopdrachten](Screenshot_20171110_114139.png)
 
 Als we hier de 'Cats' voorbeeld kiezen, krijgen we de bijbehorende zoekopdracht te zien:
 
-[IMAGE]
+![Elke zoekopdracht is geschreven in SPARQL](Screenshot_20171110_114726.png)
 
 
