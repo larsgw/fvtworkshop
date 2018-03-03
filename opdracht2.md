@@ -6,8 +6,8 @@ dat het de moeite meer dan waard is daar ervaring me op te doen. Al is het allee
 het kan. We gaan een aantal voorbeeld doorlopen en knippen en plakken van SPARQL zoekopdrachten is 
 absoluut toegestaan. Sterker nog, is verdient de voorkeur boven het "wiel op nieuw uitvinden".
 
-1 Katten
---------
+1 Een eenvoudige zoekopdrachtL Katten
+-------------------------------------
 
 Deze eerste opdracht laat je kennis maken met een van de manieren om informatie te zoeken in Wikidata.
 Natuurlijk kan dat ook met de [Wikidata homepage](http://wikidata.org/) zelf ook, maar met de 
@@ -22,4 +22,14 @@ Als we hier de 'Cats' voorbeeld kiezen, krijgen we de bijbehorende zoekopdracht 
 
 ![Elke zoekopdracht is geschreven in SPARQL](Screenshot_20171110_114726.png)
 
+
+2 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
+-----------------------------------------------------------------
+
+De zoekopdrachten kunnen veel meer. Bijvoorbeeld, we kunnen zoeken naar boeken die voor 1900 gepubliceerd
+zijn en geschreven zijn door schrijvers die in Nederland geboren zijn:
+
+![Boeken van voor 1900 door auteurs die in Nederland geboren zijn](Screenshot_20180302_105138.png)
+
+Maar dat zijn wel heel veel stappen in een keer.
 
