@@ -6,7 +6,7 @@ dat het de moeite meer dan waard is daar ervaring me op te doen. Al is het allee
 het kan. We gaan een aantal voorbeeld doorlopen en knippen en plakken van SPARQL zoekopdrachten is 
 absoluut toegestaan. Sterker nog, is verdient de voorkeur boven het "wiel op nieuw uitvinden".
 
-1 Een eenvoudige zoekopdrachtL Katten
+1 Een eenvoudige zoekopdracht: Katten
 -------------------------------------
 
 Deze eerste opdracht laat je kennis maken met een van de manieren om informatie te zoeken in Wikidata.
