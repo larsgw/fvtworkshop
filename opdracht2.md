@@ -22,6 +22,39 @@ Als we hier de 'Cats' voorbeeld kiezen, krijgen we de bijbehorende zoekopdracht 
 
 ![Elke zoekopdracht is geschreven in SPARQL](Screenshot_20171110_114726.png)
 
+Deze zoekopdracht heeft een vaste structuur, die er in grote lijnen uitziet als:
+
+```(SPARQL)
+SELECT ?onbekende WHERE {
+  # voorwaarden
+}
+```
+
+We zien hier twee delen: ``SELECT`` en ``WHERE``. Het ``SELECT`` deel zegt hoe we de informatie willen zien, en het
+``WHERE`` vertelt ons welke informatie we willen zien. Dat laatste is belangrijk, wat we willen niet alles zien,
+maar alleen datgene dat aan onze zoekopdracht voldoet.
+
+Bij de zoekopdracht naar katten, willen we weten welk ding (''item'') in Wikidata een kat is, en wat de
+naam (''itemLabel'') van die kat is. De zoekopdracht stelt dat we alleen dingen willen die ''kat zijn''.
+De ''zijn'' in die opdracht is the ''wdt:P31'' (P31 is ''instance of'', ofwel ''van het type''). De ''kat''
+in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146).
+
+En omdat Wikidata een internationale database is, gebruiken we verder nog een ''SERVICE'' om een label in
+onze (zoals ingesteld in je webbrowser) taal te geven.
+
+Dat maakt de volledige zoekopdracht in de SPARQL zoektaal:
+
+
+```(SPARQL)
+#Cats
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P31 wd:Q146.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
 
 2 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
 -----------------------------------------------------------------
