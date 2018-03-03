@@ -36,7 +36,8 @@ maar alleen datgene dat aan onze zoekopdracht voldoet.
 
 Bij de zoekopdracht naar katten, willen we weten welk ding (''item'') in Wikidata een kat is, en wat de
 naam (''itemLabel'') van die kat is. De zoekopdracht stelt dat we alleen dingen willen die ''kat zijn''.
-De ''zijn'' in die opdracht is the ''wdt:P31'' (P31 is ''instance of'', ofwel ''van het type''). De ''kat''
+De ''zijn'' in die opdracht is the ''wdt:P31'' ([P31](https://www.wikidata.org/wiki/Property:P31) is
+''instance of'', ofwel ''van het type''). De ''kat''
 in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146).
 
 En omdat Wikidata een internationale database is, gebruiken we verder nog een ''SERVICE'' om een label in
