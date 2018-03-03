@@ -1,31 +1,17 @@
-FAIR Data: voor beginners en gevorderden!
-=========================================
+Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informatie in Wikidata
+=============================================================================================
 
-Dit workshopmateriaal is gestart voor de [FAIR Data: voor beginners en gevorderden!](index.md) workshop,
-die onderdeel was van een [SURF evenement](https://www.surf.nl/agenda/2017/10/seminar-verder-bouwen-aan-open-access/index.html).
+Dit is het workshopmateriaal voor de ''Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informatie in Wikidata'' workshop,
+die onderdeel iss van het [Festival van Talent](https://festivalvantalent.nl/) 2018.
 
 Programma
 ---------
 
-* 12:45-13:45: Deel I: De theorie
-* 14:15-15:15: Deel II: De praktijk
+De workshop wordt drie keer herhaald. Elke workshop bestaat uit verschillende onderdelen:
 
-Wat je kan doen na deze workshop:
+* 5 minuten: Wat is Wikidata
+* 20 minuten: Zoeken in Wikidata
+* 20 minuten: Scholia gebruiken
+* 15 minuten: Wikidata bewerken
 
-* De onderstaande materiaal doornemen
-* Inschrijven voor de [OKI Open Science emaillijst voor Nederland](https://lists.okfn.org/mailman/listinfo/open-science-nl)
-* Meehelpen een deze MOOC :)
 
-Deel I: De theorie
-------------------
-
-De "FAIR Data: voor beginners en gevorderden!" workshop was onderdeel van een SURF evenement.
-
-* [Wat is Open Science?](watisopenscience.md)
-* [Wat is FAIR?](watisfair.md)
-
-Deel II: De praktijk
---------------
-
-* [Literatuur over een onderwerp](opdracht1.md)
-* [Vette zoekopdrachten](opdracht2.md)

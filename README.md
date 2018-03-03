@@ -1,8 +1,9 @@
-# FAIR Data: voor beginners en gevorderden!
+# Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informatie in Wikidata
 
-De [FAIR Data: voor beginners en gevorderden!](index.md) workshop was onderdeel van een [SURF evenement](https://www.surf.nl/agenda/2017/10/seminar-verder-bouwen-aan-open-access/index.html).
+De [Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informatie in Wikidata](index.md) workshop
+is onderdeel van het [Festival van Talent](https://festivalvantalent.nl/) dat op 24 maart 2018 in Eindhoven plaatsvindt.
 
-Of lees dit materiaal online op https://egonw.github.io/fopworkshop/
+Lees het workshopmateriaal online op https://egonw.github.io/fvtworkshop/
 
 Dit materiaal is beschikbaar onder de [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode) licentie.
 
