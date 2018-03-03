@@ -43,7 +43,13 @@ Bij de zoekopdracht naar katten, willen we weten welk ding (''item'') in Wikidat
 naam (''itemLabel'') van die kat is. De zoekopdracht stelt dat we alleen dingen willen die ''kat zijn''.
 De ''zijn'' in die opdracht is the ''wdt:P31'' ([P31](https://www.wikidata.org/wiki/Property:P31) is
 ''instance of'', ofwel ''van het type''). De ''kat''
-in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146).
+in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146). De zoekopdracht is dus vooral:
+
+```(SPARQL)
+?item wdt:P31 wd:Q146
+````
+
+Dit leest als: alle items (''?item'') die ''van het type'' ''kat''.
 
 En omdat Wikidata een internationale database is, gebruiken we verder nog een ''SERVICE'' om een label in
 onze (zoals ingesteld in je webbrowser) taal te geven.
@@ -68,5 +74,37 @@ zijn en geschreven zijn door schrijvers die in Nederland geboren zijn:
 
 ![Boeken van voor 1900 door auteurs die in Nederland geboren zijn](Screenshot_20180302_105138.png)
 
-Maar dat zijn wel heel veel stappen in een keer.
+Maar dat zijn wel heel veel stappen in een keer. We doen het step voor stap en beginnen met de zoekopdracht.
+We willen dus alleen dingen die een boek zijn ([Q571](https://www.wikidata.org/wiki/Q571)). Dus we maken
+een ''variabele'' en gebruiken net zoals bij de katten P31:
+
+```(SPARQL)
+?book wdt:P31 wd:Q571
+```
+
+Dit leest dus als: alle boeken (''?book'') die ''van het type'' ''boek'' zijn.
+
+Maar we willen meer van het boek weten, zoals de auteur:
+
+```(SPARQL)
+?book wdt:P50 ?author
+```
+
+We willen ook weten wanneer het boek gepubliceerd is:
+
+```(SPARQL)
+?book wdt:P577 ?date
+```
+
+Bovendien moet de auteur in een plaats (P19 is ''geboorteplaats'')
+in Nederland (Q55) (P17 is ''land'') geboren zijn:
+
+```(SPARQL)
+?author  wdt:P19 ?birthPlace .
+?birthPlace wdt:P17 wd:Q55 .
+```
+
+... MORE TODO ...
+
+
 
