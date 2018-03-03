@@ -22,6 +22,11 @@ Als we hier de 'Cats' voorbeeld kiezen, krijgen we de bijbehorende zoekopdracht 
 
 ![Elke zoekopdracht is geschreven in SPARQL](Screenshot_20171110_114726.png)
 
+Je kan [die zoekopdracht](https://query.wikidata.org/#%23Cats%0ASELECT%20%3Fitem%20%3FitemLabel%20%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ146.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D)
+uitvoeren door op de blauwe ''play'' knop to clicken met dit als resultaat:
+
+![Een lijst van katten in Wikidata](Screenshot_20180303_150856.png)
+
 Deze zoekopdracht heeft een vaste structuur, die er in grote lijnen uitziet als:
 
 ```(SPARQL)
@@ -45,7 +50,6 @@ onze (zoals ingesteld in je webbrowser) taal te geven.
 
 Dat maakt de volledige zoekopdracht in de SPARQL zoektaal:
 
-
 ```(SPARQL)
 #Cats
 SELECT ?item ?itemLabel 
@@ -55,7 +59,6 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-
 
 2 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
 -----------------------------------------------------------------
