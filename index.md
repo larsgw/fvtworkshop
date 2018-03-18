@@ -9,9 +9,9 @@ Programma
 
 De workshop wordt drie keer herhaald. Elke workshop bestaat uit verschillende onderdelen:
 
-* 5 minuten: Wat is Wikidata
+* 10 minuten: Wat is Wikidata
 * 20 minuten: [Zoeken in Wikidata](opdracht2.md)
-* 20 minuten: Scholia gebruiken
+* 15 minuten: Scholia gebruiken
 * 15 minuten: Wikidata bewerken
 
 
