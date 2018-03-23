@@ -45,7 +45,7 @@ De ''zijn'' in die opdracht is the ''wdt:P31'' ([P31](https://www.wikidata.org/w
 ''instance of'', ofwel ''van het type''). De ''kat''
 in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146). De zoekopdracht is dus vooral:
 
-```(SPARQL)
+```sparql
 ?item wdt:P31 wd:Q146
 ````
 
@@ -56,7 +56,7 @@ onze (zoals ingesteld in je webbrowser) taal te geven.
 
 Dat maakt de volledige zoekopdracht in de SPARQL zoektaal:
 
-```(SPARQL)
+```sparql
 #Cats
 SELECT ?item ?itemLabel 
 WHERE 
@@ -75,7 +75,7 @@ We moeten dan dus eerst weten welke boeken bij de Harry Potter serie horen. Gelu
 Wikidata item voor de [Harry Potter serie](https://www.wikidata.org/wiki/Q8337) (Q8337), zodat
 we kunne zeggen welke boeken in die serie horen (P179):
 
-```(SPARQL)
+```sparql
 SELECT ?boek ?boekLabel WHERE {
   ?boek wdt:P179 wd:Q8337 .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
@@ -85,7 +85,7 @@ SELECT ?boek ?boekLabel WHERE {
 De volgende stap is dan de link te slaan tussen een boek en de karakters in dat boek. Daar
 heeft Wikidata het [personage](https://www.wikidata.org/wiki/Property:P674) (P674) eigenschap voor:
 
-```(SPARQL)
+```sparql
 SELECT ?boek ?boekLabel ?karakter ?karakterLabel WHERE {
   ?boek wdt:P179 wd:Q8337 .
   ?boek wdt:P674 ?karakter .
@@ -101,7 +101,7 @@ En als je nu wil weten wanneer deze personen geboren zijn, hoeven we eigenlijk n
 veel te veranderen. We voegen een regel toe om de geboortedag op te vragen en we halen
 weg dat hij zegt in welke boeken het karakter voorkomt:
 
-```(SPARQL)
+```sparql
 SELECT DISTINCT ?karakter ?karakterLabel ?geboortedag WHERE {
   ?boek wdt:P179 wd:Q8337 .
   ?boek wdt:P674 ?karakter .
@@ -133,7 +133,7 @@ Maar dat zijn wel heel veel stappen in een keer. We doen het step voor stap en b
 We willen dus alleen dingen die een boek zijn ([Q571](https://www.wikidata.org/wiki/Q571)). Dus we maken
 een ''variabele'' en gebruiken net zoals bij de katten P31:
 
-```(SPARQL)
+```sparql
 ?book wdt:P31 wd:Q571
 ```
 
@@ -141,13 +141,13 @@ Dit leest dus als: alle boeken (''?book'') die ''van het type'' ''boek'' zijn.
 
 Maar we willen meer van het boek weten, zoals de auteur:
 
-```(SPARQL)
+```sparql
 ?book wdt:P50 ?author
 ```
 
 We willen ook weten wanneer het boek gepubliceerd is:
 
-```(SPARQL)
+```sparql
 ?book wdt:P577 ?date
 ```
 
