@@ -18,7 +18,7 @@ De toepassing laat je bladeren door artikelen, tijdschriften, onderzoekers, soor
 De Scholia toepassing geeft de mogelijkheid om op de voorpagina een zoekopdracht uit te voeren.
 Zo kan je bijvoorbeeld zoeken op Zika:
 
-![Searching Zika in Scholia](https://github.com/egonw/fopworkshop/raw/master/scholia_zika.png)
+![Searching Zika in Scholia](scholia_zika.png)
 
 Maar je kan natuurlijk van alles opzoeken. De opdracht is om iets op te zoeken wat jij interessant vindt.
 
@@ -34,3 +34,5 @@ De zoekopdrachten die daar achter zitten, zijn vaak flink ingewikkeld, maar wel 
 bestuderen. Klik maar eens op de "Edit this" link:
 
 ![Alle zoekopdrachten zijn herbruikbaar](Screenshot_20180323_163537.png)
+
+Je komt dan (weer terug) bij de Wikidata Query Service zoals we [eerder](opdracht2.md) zagen.
