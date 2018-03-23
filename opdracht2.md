@@ -121,6 +121,49 @@ Het resultaat ziet er dan zo uit:
 
 (Voor de ouders, wie is er in jouw geboortejaar geboren?)
 
+## Meer visualisaties: Van Gogh
+
+We hebben naast de tabel hierboven ook een tijdslijn als visualisatie mogelijkheid gezien. Maar als
+we schilderijen van Van Gogh willen zien, willen we graag weten welk schilderij waar hangt. Ook over
+schilderijen staat heel veel informatie in Wikidata, met dank aan de musea die tegenwoordig afbeeldingen
+van schilderijen beschikbaar maken, kunnen we leuke dingen doen.
+
+Ten eerste, we zijn dus op zoek naar schilderijen (Q3305213) die door Van Gogh (Q5582) geschilderd zijn. Dit
+doen we met de zoekopdracht:
+
+```sparql
+SELECT ?schilderij ?schilderijLabel WHERE {
+  ?schilderij wdt:P170 wd:Q5582 ; # door Van Gogh
+              wdt:P31 wd:Q3305213 . # is een schilderij
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+Maar we hebben dus ook de locatie (P276) nodig (inclusief coordinaten (P625)),
+en als het even kan een plaatje (P18) van het schilderij:
+
+```sparql
+SELECT ?schilderij ?schilderijLabel ?location ?locationLabel ?image ?coordinates WHERE {
+  ?schilderij wdt:P170 wd:Q5582 ; # door Van Gogh
+              wdt:P31 wd:Q3305213 ; # is een schilderij
+              wdt:P276 ?location .
+  ?location wdt:P625 ?coordinates . # waar hangt het?
+  OPTIONAL { ?schilderij wdt:P18 ?image }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+We zagen al eerder bij de Harry Potter karakters hoe we kunnen wisselen van de standaard tabel
+naar een tijdslijn. Maar als we plaatjes hebben, kunnen we ook een overzicht van plaatjes maken
+("Image Grid" in het Engels):
+
+![Plaatjes van schilderijen van Van Gogh](Screenshot_20180323_223253.png)
+
+En omdat we ook coordinaten hebben van de lokaties hebben waar het schilderij hangt, een wereldkaart ("Map"):
+
+![Wereldkaart met lokaties waar Van Gogh schilderijen hanen](Screenshot_20180323_223413.png)
+
+
 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
 ---------------------------------------------------------------
 
