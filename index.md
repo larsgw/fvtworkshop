@@ -2,7 +2,7 @@ Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informati
 =============================================================================================
 
 Dit is het workshopmateriaal voor de ''Van medicijnen en soorten, tot schrijvers en schilderijen: betrouwbare informatie in Wikidata'' workshop,
-die onderdeel iss van het [Festival van Talent](https://festivalvantalent.nl/) op zaterdag 24 maart 2018 in Eindhoven.
+die onderdeel is van het [Festival van Talent](https://festivalvantalent.nl/) op zaterdag 24 maart 2018 in Eindhoven.
 
 Programma
 ---------
