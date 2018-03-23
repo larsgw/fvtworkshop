@@ -1,19 +1,19 @@
 Informatie zoeken in Wikidata
 =============================
 
-In deze opdracht gaan we aan de slag met SPARQL. Dat klinkt technisch, en is het ook, maar zo krachtig
-dat het de moeite meer dan waard is daar ervaring me op te doen. Al is het alleen maar om te weten wat
-het kan. We gaan een aantal voorbeeld doorlopen en knippen en plakken van SPARQL zoekopdrachten is 
-absoluut toegestaan. Sterker nog, is verdient de voorkeur boven het "wiel op nieuw uitvinden".
+In deze opdracht gaan we aan de slag met SPARQL. Dat klinkt technisch (en dat is het ook), maar het is zo handig
+dat het de moeite meer dan waard is om daar ervaring mee op te doen, al is het maar om te weten wat
+kan. We gaan een aantal voorbeelden doorlopen, en hierbij is het knippen en plakken van SPARQL-zoekopdrachten 
+absoluut toegestaan. Sterker nog, dat is vaak beter dan het wiel opnieuw uitvinden.
 
 Een eenvoudige zoekopdracht: Katten
--------------------------------------
+-----------------------------------
 
-Deze eerste opdracht laat je kennis maken met een van de manieren om informatie te zoeken in Wikidata.
-Natuurlijk kan dat ook met de [Wikidata homepage](http://wikidata.org/) zelf ook, maar met de 
-[Wikidata Query Service](https://query.wikidata.org/) (WQS) kunnen we de betekenis van dingen gebruiken.
-Het eerste voorbeeld is zoeken op alle dingen die een kat zijn. Die SPARQL zoekopdracht daarvoor
-hoeven we niet zelf te verzinnen, maar is een voorbeeld uit meer dan 300 voorbeelden die de WQS
+In deze eerste opdracht maak je kennis met een van de manieren om informatie te zoeken in Wikidata.
+Je kan natuurlijk de zoekfunctie op de [Wikidata homepage](http://wikidata.org/) gebruiken, maar met de 
+[Wikidata Query Service](https://query.wikidata.org/) (WQS) kunnen we veel gerichter zoeken.
+Het eerste voorbeeld is zoeken op alle katten in Wikidata. De SPARQL-zoekopdracht daarvoor
+hoeven we niet zelf te verzinnen, het is namelijk een van de 300+ voorbeelden die de WQS
 standaard aanbiedt onder de "Example" knop:
 
 ![Wikidata heeft veel voorbeeld SPARQL zoekopdrachten](Screenshot_20171110_114139.png)
@@ -23,15 +23,15 @@ Als we hier de 'Cats' voorbeeld kiezen, krijgen we de bijbehorende zoekopdracht 
 ![Elke zoekopdracht is geschreven in SPARQL](Screenshot_20171110_114726.png)
 
 Je kan [die zoekopdracht](https://query.wikidata.org/#%23Cats%0ASELECT%20%3Fitem%20%3FitemLabel%20%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ146.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D)
-uitvoeren door op de blauwe ''play'' knop to clicken met dit als resultaat:
+uitvoeren door op de blauwe ''play'' knop te clicken met dit als resultaat:
 
 ![Een lijst van katten in Wikidata](Screenshot_20180303_150856.png)
 
 Deze zoekopdracht heeft een vaste structuur, die er in grote lijnen uitziet als:
 
 ```sparql
-SELECT ?onbekende WHERE {
-  # voorwaarden
+SELECT ?resultaat WHERE {
+  # zoekopdracht
 }
 ```
 
@@ -41,7 +41,7 @@ maar alleen datgene dat aan onze zoekopdracht voldoet.
 
 Bij de zoekopdracht naar katten, willen we weten welk ding (''item'') in Wikidata een kat is, en wat de
 naam (''itemLabel'') van die kat is. De zoekopdracht stelt dat we alleen dingen willen die ''kat zijn''.
-De ''zijn'' in die opdracht is the ''wdt:P31'' ([P31](https://www.wikidata.org/wiki/Property:P31) is
+De ''zijn'' in die opdracht is the `wdt:P31` ([P31](https://www.wikidata.org/wiki/Property:P31) is
 ''instance of'', ofwel ''van het type''). De ''kat''
 in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146). De zoekopdracht is dus vooral:
 
@@ -49,7 +49,7 @@ in die opdracht is [Q146](https://www.wikidata.org/wiki/Q146). De zoekopdracht i
 ?item wdt:P31 wd:Q146
 ````
 
-Dit leest als: alle items (''?item'') die ''van het type'' ''kat''.
+Dit kan je lezen als: alle items (''?item'') die ''van het type'' ''kat'' zijn.
 
 En omdat Wikidata een internationale database is, gebruiken we verder nog een ''SERVICE'' om een label in
 onze (zoals ingesteld in je webbrowser) taal te geven.
