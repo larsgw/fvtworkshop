@@ -6,7 +6,7 @@ dat het de moeite meer dan waard is daar ervaring me op te doen. Al is het allee
 het kan. We gaan een aantal voorbeeld doorlopen en knippen en plakken van SPARQL zoekopdrachten is 
 absoluut toegestaan. Sterker nog, is verdient de voorkeur boven het "wiel op nieuw uitvinden".
 
-1 Een eenvoudige zoekopdracht: Katten
+Een eenvoudige zoekopdracht: Katten
 -------------------------------------
 
 Deze eerste opdracht laat je kennis maken met een van de manieren om informatie te zoeken in Wikidata.
@@ -66,8 +66,39 @@ WHERE
 }
 ```
 
-2 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
------------------------------------------------------------------
+Karakters uit Harry Potter boeken
+---------------------------------
+
+De zoekopdracht naar katten is redelijk eenvoudig, maar we kunnen de opdracht steeds complexer maken.
+Bijvoorbeeld, we kunnen een zoekopdracht maken die alle karakters opzoekt uit Harry Potter-boeken.
+We moeten dan dus eerst weten welke boeken bij de Harry Potter serie horen. Gelukkig is er een
+Wikidata item voor de [Harry Potter serie](https://www.wikidata.org/wiki/Q8337) (Q8337), zodat
+we kunne zeggen welke boeken in die serie horen (P179):
+
+```(SPARQL)
+SELECT ?boek ?boekLabel WHERE {
+  ?boek wdt:P179 wd:Q8337 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+De volgende stap is dan de link te slaan tussen een boek en de karakters in dat boek. Daar
+heeft Wikidata het [personage](https://www.wikidata.org/wiki/Property:P674) (P674) eigenschap voor:
+
+```(SPARQL)
+SELECT ?boek ?boekLabel ?karakter ?karakterLabel WHERE {
+  ?boek wdt:P179 wd:Q8337 .
+  ?boek wdt:P674 ?karakter .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+Dat geeft een mooie lijst:
+
+![Lijst van karakters in Harry Potter boeken](Screenshot_20180323_171804.png)
+
+Boeken van voor 1900 door auteurs die in Nederland geboren zijn
+---------------------------------------------------------------
 
 De zoekopdrachten kunnen veel meer. Bijvoorbeeld, we kunnen zoeken naar boeken die voor 1900 gepubliceerd
 zijn en geschreven zijn door schrijvers die in Nederland geboren zijn:
