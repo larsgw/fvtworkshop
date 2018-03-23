@@ -154,12 +154,26 @@ We willen ook weten wanneer het boek gepubliceerd is:
 Bovendien moet de auteur in een plaats (P19 is ''geboorteplaats'')
 in Nederland (Q55) (P17 is ''land'') geboren zijn:
 
-```(SPARQL)
+```sparql
 ?author  wdt:P19 ?birthPlace .
 ?birthPlace wdt:P17 wd:Q55 .
 ```
 
-... MORE TODO ...
+Daarmee is de hele zoekopdracht:
 
+```sparql
+#defaultView:Timeline
+SELECT ?book ?bookLabel ?date ?author ?authorLabel ?birthPlace ?birthPlaceLabel ?image WHERE {
+  VALUES ?bookType { wd:Q571 wd:Q3331189 }
+  ?book wdt:P50 ?author ; wdt:P31 ?bookType ; wdt:P577 ?date .
+  OPTIONAL { ?book wdt:P18 ?image }
+  ?author wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P17 wd:Q55 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  FILTER (year(?date) < 1900)
+}
+```
 
+Echter, een zoekopdracht kan op een gegeven moment te moeilijk worden om in kort tijd uit te voeren in de database.
+Er zijn dan wel wat trucjes, maar die vallen buiten de inhoud van deze workshop.
 
