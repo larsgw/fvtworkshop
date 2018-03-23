@@ -217,6 +217,29 @@ SELECT ?book ?bookLabel ?date ?author ?authorLabel ?birthPlace ?birthPlaceLabel 
 }
 ```
 
-Echter, een zoekopdracht kan op een gegeven moment te moeilijk worden om in kort tijd uit te voeren in de database.
+## Beroemde dennebomen in Europa
+
+Een laatste zoekopdracht dan, over beroemde dennebomen (Q12024). Die zijn er niet zo heel veel, maar toch een paar:
+
+![Map of Europe with the location of famous pine trees](Screenshot_20180323_230132.png)
+
+De bijbehorende zoekopdracht is:
+
+```sparql
+#defaultView:Map
+SELECT ?tree ?treeLabel ?location ?image WHERE {
+  { ?tree wdt:P279+|wdt:P31+/wdt:P171 wd:Q12024 }
+  UNION
+  { ?tree wdt:P279+|wdt:P31+ wd:Q12024 }
+  ?tree wdt:P18 ?image ; wdt:P625 ?location .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+Opdracht: kan jij deze zoekopdracht aanpassen zodat hij beroemde eikenbomen laat zien?
+
+## Tot slot
+
+Een zoekopdracht kan echter op een gegeven moment te moeilijk worden om in kort tijd uit te voeren in de database.
 Er zijn dan wel wat trucjes, maar die vallen buiten de inhoud van deze workshop.
 
