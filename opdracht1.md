@@ -5,19 +5,6 @@ In deze opdracht gaan we aan de slag met Open Data. Meer specifiek, we gaan aan 
 met de annotatie van Open Data met literatuur die het experiment of studie beschrijft die
 een feit ondersteund.
 
-1 Scholia
----------
-
-Open Science is geven en namen. Daarom beginnen we met nemen: [Scholia](https://tools.wmflabs.org/scholia/).
-
-**Opdracht**: Zoek literature in Scholia over het Zika virus.
-
-![Searching Zika virus in Scholia](https://github.com/egonw/fopworkshop/raw/master/scholia_zika.png)
-
-**Opdracht**: Zoek literature voor jouw hogeschool.
-
-IMAGE_TBD
-
 2 Literatuur toevoegen aan Wikidata
 -----------------------------------
 
