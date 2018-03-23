@@ -15,6 +15,8 @@ De workshop wordt drie keer herhaald. Elke workshop bestaat uit verschillende on
    * [Karakters uit Harry Potter boeken](opdracht2.md##karakters-uit-harry-potter-boeken)
    * [Boeken van voor 1900 door auteurs die in Nederland geboren zijn](opdracht2.md#boeken-van-voor-1900-door-auteurs-die-in-nederland-geboren-zijn)
 * 15 minuten: [Scholia gebruiken](scholia.md)
+   * [Opdracht: Onderwerpen opzoeken in Scholia](https://github.com/egonw/fvtworkshop/blob/master/scholia.md#opdracht-onderwerpen-opzoeken-in-scholia)
+   * [Opdracht: Welke informatie vinden we via Scholia](https://github.com/egonw/fvtworkshop/blob/master/scholia.md#opdracht-welke-informatie-vinden-we-via-scholia)
 * 15 minuten: [Wikidata bewerken](opdracht1.md)
 
 
