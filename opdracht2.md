@@ -97,6 +97,30 @@ Dat geeft een mooie lijst:
 
 ![Lijst van karakters in Harry Potter boeken](Screenshot_20180323_171804.png)
 
+En als je nu wil weten wanneer deze personen geboren zijn, hoeven we eigenlijk niet zo heel
+veel te veranderen. We voegen een regel toe om de geboortedag op te vragen en we halen
+weg dat hij zegt in welke boeken het karakter voorkomt:
+
+```(SPARQL)
+SELECT DISTINCT ?karakter ?karakterLabel ?geboortedag WHERE {
+  ?boek wdt:P179 wd:Q8337 .
+  ?boek wdt:P674 ?karakter .
+  ?karakter wdt:P569 ?geboortedag .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+En omdat we nu datums hebben, kunnen we dit ook als tijdslijn visualiseren ("Timeline" in het
+Engels):
+
+![Het veranderen van hoe de resultaten getoond worden: de tijdslijn](Screenshot_20180323_173020.png)
+
+Het resultaat ziet er dan zo uit:
+
+![Tijdlijns die laat zien wanneer Harry Potter-karakters geboren zijn](Screenshot_20180323_173302.png)
+
+(Voor de ouders, wie is er in jouw geboortejaar geboren?)
+
 Boeken van voor 1900 door auteurs die in Nederland geboren zijn
 ---------------------------------------------------------------
 
