@@ -29,7 +29,7 @@ uitvoeren door op de blauwe ''play'' knop to clicken met dit als resultaat:
 
 Deze zoekopdracht heeft een vaste structuur, die er in grote lijnen uitziet als:
 
-```(SPARQL)
+```sparql
 SELECT ?onbekende WHERE {
   # voorwaarden
 }
