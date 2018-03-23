@@ -19,6 +19,6 @@ De workshop wordt drie keer herhaald. Elke workshop bestaat uit verschillende on
 * 15 minuten: [Scholia gebruiken](scholia.md)
    * [Opdracht: Onderwerpen opzoeken in Scholia](https://github.com/egonw/fvtworkshop/blob/master/scholia.md#opdracht-onderwerpen-opzoeken-in-scholia)
    * [Opdracht: Welke informatie vinden we via Scholia](https://github.com/egonw/fvtworkshop/blob/master/scholia.md#opdracht-welke-informatie-vinden-we-via-scholia)
-* 15 minuten: [Wikidata bewerken](opdracht1.md)
+* 15 minuten: [Literatuurbronnen](opdracht1.md)
 
 
