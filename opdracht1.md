@@ -5,7 +5,7 @@ In deze opdracht gaan we aan de slag met Open Data. Meer specifiek, we gaan aan 
 met de annotatie van Open Data met literatuur die het experiment of studie beschrijft die
 een feit ondersteund.
 
-2 Literatuur toevoegen aan Wikidata
+Nieuwe artikelen toevoegen aan Wikidata
 -----------------------------------
 
 Als je nou literatuur aan Wikidata wil toevoegen, omdat die een auteur heeft van jouw instituut (vorige
@@ -33,7 +33,7 @@ IMAGE_TBD
 
 TBD
 
-3 Bronvermeldingen
+Bronvermeldingen
 ------------------
 
 Het tweede stuk is het delen van kennis. In tijden dat feiten belangrijker zijn dan ooit, is het zaak te weten
